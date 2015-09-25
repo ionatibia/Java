@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Crear un coche</title>
+<link rel="StyleSheet" href="css/styles.css" type="text/css">
+<script type="text/javascript" src="funciones.js"></script>
+</head>
+<body>
+<br>
+<div id="contenedor">
+	<nav>
+			<p class="primerElemento"><a href="index.html">Home</a></p>
+			<p><a href="crear.html">Crear</a></p>
+			<p><a href="borrar.html">Borrar</a></p>
+			<p><a href="buscar.html">Buscar</a></p>
+			<p><a href="listar.html">Listar</a></p>
+		</nav>
+		</div>
+		<br><br>
+	<form id="form" action="CreaCoche" method="POST" onsubmit="return comprobar(this)">
+		<h2>Crear un nuevo coche</h2><br>
+		Marca:<br/>
+		<input type="text" id="marca" name="marca" /><br/>
+		Color:<br/>
+		<input type="text" id="color" name="color" /><br/>
+		Matrícula:<br/>
+		<input id="matricula" type="text" name="matricula" /><br/>
+		Número de ruedas:<br/>
+		<input id="numRuedas" type="number" name="numRuedas" /><br/>
+		
+		Es automático?:<br/>
+		<input type="radio" id="auto" name="auto" value="true" checked/>Si
+		<input type="radio" id="auto" name="auto" value="false" />No<br/>
+		Consumo:<br/>
+		<input type="number" id="consumo" name="consumo" /><br/>
+		<br/>
+		<input type="submit" name="submit" value="Enviar"/>
+	</form>
+	<br><br>
+	<footer>
+			<p>&copy;&nbsp;Miguel Gil & Iker Oñatibia -- 2015</p>
+		</footer>
+</body>
+</html>
